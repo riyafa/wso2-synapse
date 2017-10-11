@@ -33,7 +33,7 @@ public class Sample352 extends SynapseTestCase {
 
 
     public void testAccessingAPIUsingScripting() {
-        String addUrl = "http://localhost:9000/services/SimpleStockQuoteService";
+        String addUrl = "http://192.168.88.81:9000/services/SimpleStockQuoteService";
         String trpUrl = "http://localhost:8280/";
         StockQuoteSampleClient client = getStockQuoteClient();
         log.info("Running test: Accessing Synapse message context API methods using scripting language");

@@ -23,7 +23,7 @@
 
     <sequence name="main">
         <in>
-            <header name="To" value="http://localhost:9000/services/SimpleStockQuoteService"/>
+            <header name="To" value="http://192.168.88.81:9000/services/SimpleStockQuoteService"/>
         </in>
         <send/>
     </sequence>

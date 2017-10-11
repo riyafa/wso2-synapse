@@ -30,7 +30,7 @@ public class Sample0 extends SynapseTestCase {
 
 
     public void testSmartClientMode() {
-        String addUrl = "http://localhost:9000/services/SimpleStockQuoteService";
+        String addUrl = "http://192.168.88.81:9000/services/SimpleStockQuoteService";
         String trpUrl = "http://localhost:8280/";
 
         log.info("Running test: Smart Client mode");
@@ -41,7 +41,7 @@ public class Sample0 extends SynapseTestCase {
 
 
     public void testSynapseAsHTTPProxy() {
-        String addUrl = "http://localhost:9000/services/SimpleStockQuoteService";
+        String addUrl = "http://192.168.88.81:9000/services/SimpleStockQuoteService";
         String prxUrl = "http://localhost:8280/";
 
         log.info("Running test: Using Synapse as a HTTP Proxy");

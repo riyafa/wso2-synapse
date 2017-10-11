@@ -32,17 +32,17 @@
 
                     <loadbalance>
                         <endpoint>
-                            <address uri="http://localhost:9001/services/LBService1">
+                            <address uri="http://192.168.88.81:9001/services/LBService1">
                                 <enableAddressing/>
                             </address>
                         </endpoint>
                         <endpoint>
-                            <address uri="http://localhost:9002/services/LBService1">
+                            <address uri="http://192.168.88.81:9002/services/LBService1">
                                 <enableAddressing/>
                             </address>
                         </endpoint>
                         <endpoint>
-                            <address uri="http://localhost:9003/services/LBService1">
+                            <address uri="http://192.168.88.81:9003/services/LBService1">
                                 <enableAddressing/>
                             </address>
                         </endpoint>

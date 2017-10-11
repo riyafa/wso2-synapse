@@ -25,13 +25,13 @@
                 src="file:repository/conf/sample/resources/proxy/sample_proxy_1.wsdl"/>
 
     <endpoint name="proxy_2_endpoint">
-        <address uri="http://localhost:9000/services/SimpleStockQuoteService"/>
+        <address uri="http://192.168.88.81:9000/services/SimpleStockQuoteService"/>
     </endpoint>
 
     <sequence name="proxy_1">
         <send>
             <endpoint>
-                <address uri="http://localhost:9000/services/SimpleStockQuoteService"/>
+                <address uri="http://192.168.88.81:9000/services/SimpleStockQuoteService"/>
             </endpoint>
         </send>
     </sequence>

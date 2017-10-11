@@ -32,7 +32,7 @@ public class Sample5 extends SynapseTestCase {
 
 
     public void testCreateFaultAndChangeDirection() {
-        String addUrl = "http://localhost:9000/services/SimpleStockQuoteService";
+        String addUrl = "http://192.168.88.81:9000/services/SimpleStockQuoteService";
         String trpUrl = "http://localhost:8280";
         String expectedError_MSFT = "Error while connecting to the endpoint (Connection Failed)";
         String expectedError_SUN = "Error while connecting to the endpoint (Connection Failed)";

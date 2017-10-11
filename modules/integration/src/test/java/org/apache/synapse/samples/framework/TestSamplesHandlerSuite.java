@@ -68,6 +68,7 @@ import org.apache.synapse.samples.framework.tests.proxy.Sample151;
 import org.apache.synapse.samples.framework.tests.proxy.Sample152;
 import org.apache.synapse.samples.framework.tests.proxy.Sample154;
 import org.apache.synapse.samples.framework.tests.proxy.Sample161;
+import org.apache.synapse.samples.framework.tests.qos.Sample100;
 import org.apache.synapse.samples.framework.tests.rest.Sample10002;
 import org.apache.synapse.samples.framework.tests.transport.Sample10101;
 import org.apache.synapse.samples.framework.tests.transport.Sample250;
@@ -218,74 +219,74 @@ public class TestSamplesHandlerSuite extends TestSuite {
         sampleClassRepo.put("13", Sample13.class);
         sampleClassRepo.put("15", Sample15.class);
         sampleClassRepo.put("16", Sample16.class);
-
+//
         //Endpoint
         sampleClassRepo.put("50", Sample50.class);
         sampleClassRepo.put("51", Sample51.class);
         sampleClassRepo.put("52", Sample52.class);
-        sampleClassRepo.put("53", Sample53.class);
+//        sampleClassRepo.put("53", Sample53.class);  //Load balancing and requires shutting servers
         sampleClassRepo.put("54", Sample54.class);
-        sampleClassRepo.put("55", Sample55.class);
+//        sampleClassRepo.put("55", Sample55.class);  //Load balancing and requires shutting servers
         sampleClassRepo.put("56", Sample56.class);
         //sampleClassRepo.put("57", Sample57.class);  // intermittently fail
-        sampleClassRepo.put("58", Sample58.class);
+//        sampleClassRepo.put("58", Sample58.class);  //Load balancing and requires shutting servers
 //        sampleClassRepo.put("59", Sample59.class);
-
-        //QoS
+//
+//        //QoS
 //        sampleClassRepo.put("100", Sample100.class);
-
-        //Proxy Service
-//        sampleClassRepo.put("150", Sample150.class);
+//
+//        //Proxy Service
+////        sampleClassRepo.put("150", Sample150.class);
         sampleClassRepo.put("151", Sample151.class);
         sampleClassRepo.put("152", Sample152.class);
-        //sampleClassRepo.put("153", Sample153.class); // unable to load the JKS files
+//        //sampleClassRepo.put("153", Sample153.class); // unable to load the JKS files
         sampleClassRepo.put("154", Sample154.class);
-//        sampleClassRepo.put("155", Sample155.class);
-//        sampleClassRepo.put("156", Sample156.class);
-//        sampleClassRepo.put("157", Sample157.class);
-//        sampleClassRepo.put("160", Sample160.class);
+////        sampleClassRepo.put("155", Sample155.class);
+////        sampleClassRepo.put("156", Sample156.class);
+////        sampleClassRepo.put("157", Sample157.class);
+////        sampleClassRepo.put("160", Sample160.class);
         sampleClassRepo.put("161", Sample161.class);
-
-        //Transport switching
-        sampleClassRepo.put("250", Sample250.class);
-        sampleClassRepo.put("251", Sample251.class);
-
-        //Tasks
-//        sampleClassRepo.put("300", Sample300.class);
-//        sampleClassRepo.put("301", Sample301.class);
-//        sampleClassRepo.put("302", Sample302.class);
-
-        //Advanced
+//
+//        //Transport switching
+//        sampleClassRepo.put("250", Sample250.class); //Requires local servers
+//        sampleClassRepo.put("251", Sample251.class);//Requires local servers
+//
+//        //Tasks
+////        sampleClassRepo.put("300", Sample300.class);
+////        sampleClassRepo.put("301", Sample301.class);
+////        sampleClassRepo.put("302", Sample302.class);
+//
+//        //Advanced
         sampleClassRepo.put("350", Sample350.class);
         sampleClassRepo.put("351", Sample351.class);
         sampleClassRepo.put("352", Sample352.class);
         sampleClassRepo.put("353", Sample353.class);
         sampleClassRepo.put("354", Sample354.class);
-        sampleClassRepo.put("360", Sample360.class);
-        sampleClassRepo.put("361", Sample361.class);
-        sampleClassRepo.put("362", Sample362.class);
-        sampleClassRepo.put("370", Sample370.class);   // neethi 3.0.x and wso2throttle incompatibility
-        sampleClassRepo.put("371", Sample371.class);
-        sampleClassRepo.put("372", Sample372.class);
-        sampleClassRepo.put("380", Sample380.class);
-//        sampleClassRepo.put("390", Sample390.class);
-//        sampleClassRepo.put("391", Sample391.class);
-//        sampleClassRepo.put("420", Sample420.class);
-        sampleClassRepo.put("430", Sample430.class);
-//        sampleClassRepo.put("431", Sample431.class);
-//        sampleClassRepo.put("432", Sample432.class);
-        sampleClassRepo.put("433", Sample433.class);
-        sampleClassRepo.put("434", Sample434.class);
-        sampleClassRepo.put("450", Sample450.class);
-        sampleClassRepo.put("451", Sample451.class);
-        sampleClassRepo.put("452", Sample452.class);
-        sampleClassRepo.put("460", Sample460.class);
-
-//        sampleClassRepo.put("800", Sample800.class);
-//        sampleClassRepo.put("10001", Sample10001.class);
-        sampleClassRepo.put("10002", Sample10002.class);
-//        sampleClassRepo.put("10003", Sample10003.class);
-
-        sampleClassRepo.put("10101", Sample10101.class);
+//        sampleClassRepo.put("360", Sample360.class); //uses derby
+//        sampleClassRepo.put("361", Sample361.class);
+//        sampleClassRepo.put("362", Sample362.class);
+//        sampleClassRepo.put("370", Sample370.class);   // neethi 3.0.x and wso2throttle incompatibility
+//        sampleClassRepo.put("371", Sample371.class);
+//        sampleClassRepo.put("372", Sample372.class);
+//        sampleClassRepo.put("380", Sample380.class);
+////        sampleClassRepo.put("390", Sample390.class);
+////        sampleClassRepo.put("391", Sample391.class);
+////        sampleClassRepo.put("420", Sample420.class);
+//        sampleClassRepo.put("430", Sample430.class);
+////        sampleClassRepo.put("431", Sample431.class);
+////        sampleClassRepo.put("432", Sample432.class);
+//        sampleClassRepo.put("433", Sample433.class);
+//        sampleClassRepo.put("434", Sample434.class);
+//        sampleClassRepo.put("450", Sample450.class);
+//        sampleClassRepo.put("451", Sample451.class);
+//        sampleClassRepo.put("452", Sample452.class);
+//        sampleClassRepo.put("460", Sample460.class);
+//
+////        sampleClassRepo.put("800", Sample800.class);
+////        sampleClassRepo.put("10001", Sample10001.class);
+//        sampleClassRepo.put("10002", Sample10002.class);
+////        sampleClassRepo.put("10003", Sample10003.class);
+//
+//        sampleClassRepo.put("10101", Sample10101.class);
     }
 }

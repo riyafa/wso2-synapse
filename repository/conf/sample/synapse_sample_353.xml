@@ -32,7 +32,7 @@
             <!-- send message to real endpoint referenced by name "stockquote" and stop -->
             <send>
                 <endpoint name="stockquote">
-                    <address uri="http://localhost:9000/services/SimpleStockQuoteService"/>
+                    <address uri="http://192.168.88.81:9000/services/SimpleStockQuoteService"/>
                 </endpoint>
             </send>
         </in>

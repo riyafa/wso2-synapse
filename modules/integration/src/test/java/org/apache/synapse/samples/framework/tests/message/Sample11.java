@@ -31,7 +31,7 @@ public class Sample11 extends SynapseTestCase {
 
 
     public void testFullRegistryBasedConfig() {
-        String addUrl = "http://localhost:9000/services/SimpleStockQuoteService";
+        String addUrl = "http://192.168.88.81:9000/services/SimpleStockQuoteService";
         String trpUrl = "http://localhost:8280";
         StockQuoteSampleClient client = getStockQuoteClient();
 

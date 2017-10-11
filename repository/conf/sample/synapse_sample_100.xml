@@ -29,7 +29,7 @@
             <send>
                 <!--Test 2-->
                 <endpoint name="secure">
-                    <address uri="http://localhost:9000/services/SecureStockQuoteService">
+                    <address uri="http://192.168.88.81:9000/services/SecureStockQuoteService">
                         <enableSec policy="sec_policy"/>
                     </address>
                 </endpoint>

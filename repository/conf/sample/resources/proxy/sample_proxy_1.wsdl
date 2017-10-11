@@ -352,22 +352,22 @@
     </wsdl:binding>
     <wsdl:service name="SimpleStockQuoteService">
         <wsdl:port name="SimpleStockQuoteServiceHttpSoap11Endpoint" binding="ns:SimpleStockQuoteServiceSoap11Binding">
-            <soap:address location="http://localhost:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpSoap11Endpoint"/>
+            <soap:address location="http://192.168.88.81:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpSoap11Endpoint"/>
         </wsdl:port>
         <wsdl:port name="SimpleStockQuoteServiceHttpsSoap11Endpoint" binding="ns:SimpleStockQuoteServiceSoap11Binding">
-            <soap:address location="https://localhost:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpsSoap11Endpoint"/>
+            <soap:address location="https://192.168.88.81:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpsSoap11Endpoint"/>
         </wsdl:port>
         <wsdl:port name="SimpleStockQuoteServiceHttpSoap12Endpoint" binding="ns:SimpleStockQuoteServiceSoap12Binding">
-            <soap12:address location="http://localhost:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpSoap12Endpoint"/>
+            <soap12:address location="http://192.168.88.81:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpSoap12Endpoint"/>
         </wsdl:port>
         <wsdl:port name="SimpleStockQuoteServiceHttpsSoap12Endpoint" binding="ns:SimpleStockQuoteServiceSoap12Binding">
-            <soap12:address location="https://localhost:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpsSoap12Endpoint"/>
+            <soap12:address location="https://192.168.88.81:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpsSoap12Endpoint"/>
         </wsdl:port>
         <wsdl:port name="SimpleStockQuoteServiceHttpEndpoint" binding="ns:SimpleStockQuoteServiceHttpBinding">
-            <http:address location="http://localhost:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpEndpoint"/>
+            <http:address location="http://192.168.88.81:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpEndpoint"/>
         </wsdl:port>
         <wsdl:port name="SimpleStockQuoteServiceHttpsEndpoint" binding="ns:SimpleStockQuoteServiceHttpBinding">
-            <http:address location="https://localhost:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpsEndpoint"/>
+            <http:address location="https://192.168.88.81:9000/services/SimpleStockQuoteService.SimpleStockQuoteServiceHttpsEndpoint"/>
         </wsdl:port>
     </wsdl:service>
 </wsdl:definitions>

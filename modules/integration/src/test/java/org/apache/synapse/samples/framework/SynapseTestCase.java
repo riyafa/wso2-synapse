@@ -93,10 +93,10 @@ public abstract class SynapseTestCase extends TestCase {
 
         // Load Synapse, backend server and client configurations
         synapseController = initSynapseConfigInfo(sampleConfig);
-        backendServerControllers = initBackEndServersConfigInfo(sampleConfig);
+        /*backendServerControllers = initBackEndServersConfigInfo(sampleConfig);
         if (backendServerControllers == null) {
             fail("Failed to load backend server configurations for the sample " + sampleId);
-        }
+        }*/
         clientConfig = initClientConfigInfo(sampleConfig);
 
         if (synapseController.isClusteringEnabled()) {
@@ -118,13 +118,13 @@ public abstract class SynapseTestCase extends TestCase {
         System.out.println("\n\n" + title);
         System.out.println(underline);
 
-        // Start backend servers
+        /*// Start backend servers
         for (ProcessController controller : backendServerControllers) {
             if (!controller.startProcess()) {
                 doCleanup();
                 fail("Error starting the server: " + controller.getServerName());
             }
-        }
+        }*/
 
         // Start Synapse
         if (!synapseController.startProcess()) {
@@ -150,7 +150,7 @@ public abstract class SynapseTestCase extends TestCase {
             synapseController.stopProcess();
         }
 
-        List<ProcessController> removed = new ArrayList<ProcessController>();
+        /*List<ProcessController> removed = new ArrayList<ProcessController>();
         for (ProcessController bsc : backendServerControllers) {
             if (bsc instanceof Axis2BackEndServerController) {
                 log.info("Stopping Server: " + bsc.getServerName());
@@ -166,7 +166,7 @@ public abstract class SynapseTestCase extends TestCase {
         for (ProcessController bsc : backendServerControllers) {
             log.info("Stopping Server: " + bsc.getServerName());
             bsc.stopProcess();
-        }
+        }*/
 
         //cleaning up temp dir
         try {

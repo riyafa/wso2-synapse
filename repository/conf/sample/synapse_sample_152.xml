@@ -24,7 +24,7 @@
     <proxy name="StockQuoteProxy" transports="https">
         <target>
             <endpoint>
-                <address uri="http://localhost:9000/services/SimpleStockQuoteService" format="pox"/>
+                <address uri="http://192.168.88.81:9000/services/SimpleStockQuoteService" format="pox"/>
             </endpoint>
             <outSequence>
                 <send/>

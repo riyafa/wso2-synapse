@@ -31,7 +31,7 @@ public class Sample7 extends SynapseTestCase {
     }
 
     public void testLocalRegEntriesAndSchemaValidation() {
-        String addUrl = "http://localhost:9000/services/SimpleStockQuoteService";
+        String addUrl = "http://192.168.88.81:9000/services/SimpleStockQuoteService";
         String trpUrl = "http://localhost:8280";
         String expectedError = "Invalid custom quote request";
         StockQuoteSampleClient client = getStockQuoteClient();

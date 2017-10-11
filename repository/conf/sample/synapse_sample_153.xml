@@ -27,7 +27,7 @@
                 <property name="preserveProcessedHeaders" value="true"/>
                 <send>
                     <endpoint>
-                        <address uri="http://localhost:9000/services/SecureStockQuoteService"/>
+                        <address uri="http://192.168.88.81:9000/services/SecureStockQuoteService"/>
                     </endpoint>
                 </send>
             </inSequence>
