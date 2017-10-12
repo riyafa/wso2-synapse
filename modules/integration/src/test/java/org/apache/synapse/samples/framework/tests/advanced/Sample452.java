@@ -35,7 +35,7 @@ public class Sample452 extends SynapseTestCase {
     public void testURLRewriteMultiple() {
         log.info("Running test: Conditional URL Rewriting with Multiple Rules");
 
-        String addUrl = "https://localhost/services/SimpleStockQuoteService";
+        String addUrl = "https://192.168.88.81/services/SimpleStockQuoteService";
         String trpUrl = "http://localhost:8280/";
         StockQuoteSampleClient client = getStockQuoteClient();
         result = client.requestStandardQuote(addUrl, trpUrl, null, "IBM", null);

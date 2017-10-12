@@ -37,11 +37,11 @@ public class Sample451 extends SynapseTestCase {
         String trpUrl = "http://localhost:8280/";
         StockQuoteSampleClient client = getStockQuoteClient();
 
-        String addUrl = "jms://localhost:9000/services/SimpleStockQuoteService";
+        String addUrl = "jms://192.168.88.81:9000/services/SimpleStockQuoteService";
         result = client.requestStandardQuote(addUrl, trpUrl, null, "IBM", null);
         assertTrue("Client did not get run successfully ", result.responseReceived());
 
-        addUrl = "http://localhost:7575/services/SimpleStockQuoteService";
+        addUrl = "http://192.168.88.81:7575/services/SimpleStockQuoteService";
         result = client.requestStandardQuote(addUrl, trpUrl, null, "IBM", null);
         assertTrue("Client did not get run successfully ", result.responseReceived());
     }

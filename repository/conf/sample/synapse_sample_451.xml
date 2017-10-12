@@ -27,7 +27,7 @@
                 <rewriterule>
                     <condition>
                         <and>
-                            <equal type="url" source="host" value="localhost"/>
+                            <equal type="url" source="host" value="192.168.88.81"/>
                             <not>
                                 <equal type="url" source="protocol" value="https"/>
                             </not>

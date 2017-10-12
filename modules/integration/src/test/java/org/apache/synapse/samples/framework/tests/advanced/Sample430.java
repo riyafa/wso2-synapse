@@ -32,7 +32,7 @@ public class Sample430 extends SynapseTestCase {
     }
 
     public void testCallOut() {
-        String addUrl = "http://localhost:9000/services/SimpleStockQuoteService";
+        String addUrl = "http://192.168.88.81:9000/services/SimpleStockQuoteService";
         String trpUrl = "http://localhost:8280/";
         StockQuoteSampleClient client = getStockQuoteClient();
         log.info("Running test: Simple Callout Mediator for synchronizing web service invocation");

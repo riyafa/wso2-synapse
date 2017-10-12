@@ -34,7 +34,7 @@ public class Sample450 extends SynapseTestCase {
 
     public void testURLRewrite() {
         //String repo = getConfiguration().getClientConfig().getClientRepo();
-        String addUrl = "http://localhost:9000/soap/SimpleStockQuoteService";
+        String addUrl = "http://192.168.88.81:9000/soap/SimpleStockQuoteService";
         String trpUrl = "http://localhost:8280/";
         StockQuoteSampleClient client = getStockQuoteClient();
         log.info("Running test: Introduction to the URL Rewrite Mediator");

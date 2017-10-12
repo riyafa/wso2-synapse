@@ -27,7 +27,7 @@
             <property name="https.port" value="9002"/>
             <rewrite>
                 <rewriterule>
-                    <action fragment="host" value="localhost"/>
+                    <action fragment="host" value="192.168.88.81"/>
                     <action fragment="path" type="prepend" value="/services"/>
                 </rewriterule>
                 <rewriterule>
